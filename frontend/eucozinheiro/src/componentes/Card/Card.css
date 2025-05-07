@@ -1,0 +1,104 @@
+.receitas__card {
+    background-color: rgb(251, 243, 235);
+}
+.receitas__card a {
+    color: #8d0606;
+    font-family: Pacifico, cursive;
+    text-decoration: none;
+}
+.receitas__imagem {
+    border: 1rem solid peru;
+    display: block;
+    object-fit: contain; /* Faz a imagem se ajustar ao contêiner sem distorção */
+}
+.receitas__titulo {
+    align-self: center;
+    color: #8d0606;
+    font-family: Pacifico, cursive;
+}
+.receitas__nome {   
+    font-weight: 500;
+}
+.receitas__descricao {
+    color: #595959;
+    font-weight: 100;
+}
+.receitas__autor {
+    font-weight: 900;
+}
+
+
+
+@media screen and (min-width: 0) {
+    .receitas__card {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        width: 100%;
+    }
+    .receitas__imagem{
+        max-width: 50%; /* Limita a largura máxima à largura do contêiner */
+        max-height: 50%; /*Limita a altura máxima à altura do contêiner */
+    }
+    .receitas__titulo{
+        font-size: 2.5rem;
+    }
+    .receitas__nome {
+        font-size: 2rem;   
+    }
+    .receitas__descricao {
+        font-size: 1.5rem;
+    }
+    .receitas__autor {
+        font-size: 1rem;
+        grid-area: receita__autor;
+        justify-self: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .receitas__card {
+        /* Aplicamos a este elemento o display grid e a cada classe para os elementos envolvidos em seu arquivo css aplicamos a propriedade grid-area respectivo ao seu nome
+        Decisão de usar grid para este tamanho foi para deixar os elementos mais alinhas e com posições definidas pois o flex estava desalinhando conforme o tamanho dos textos*/
+        justify-items: center;
+        display: grid;
+        grid-template-areas: "receita__imagem"
+                             "receita__nome"
+                             "receita__descricao"
+                             "receita__autor";
+        border-radius: 0 0 0.5rem 0.5rem;
+        padding: 0.5rem 1rem;
+        width: 48%;
+    }
+    .receitas__titulo {
+        font-size: 5rem ;
+    }
+    .receitas__nome {
+        background-color: peru;
+        font-size: 3rem;
+        grid-area: receita__nome;
+        margin-top: 1rem;
+        padding: 1rem;
+        
+    }
+    .receitas__descricao {
+        font-size: 2.5rem;
+        grid-area: receita__descricao;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .receitas__imagem{
+        max-width: 100%; /* Limita a largura máxima à largura do contêiner */
+        max-height: 90%; /*Limita a altura máxima à altura do contêiner */
+        grid-area: receita__imagem; /*nome da área utilizada no gridlayout da index*/
+    }
+
+    .receitas__autor {
+        justify-self: end;
+        font-size: 1.5rem;
+
+    }
+}
+

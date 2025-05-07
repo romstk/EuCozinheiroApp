@@ -1,0 +1,107 @@
+.filosofia{
+    background-color: rgb(251, 243, 235);
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+
+.filosofia__titulo {
+    align-self: center;
+    color: #8d0606;
+    font-family: Pacifico, cursive;
+}
+
+
+.filosofia__lista {
+    color: #595959;
+    list-style:square;
+    padding: 3rem;
+}
+
+
+
+.filosofia__descricao {
+    align-self: center;
+    color: #595959;
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+
+.filosofia__conteudo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.filosofia__banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+@media screen and (min-width: 0) {
+    .filosofia {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .filosofia__titulo {
+        font-size: 2.5rem;
+    }
+
+    .filosofia__lista{
+        font-size: 1.5rem;
+    }
+
+    .filosofia__descricao{
+        font-size: 1.5rem;
+    }
+
+    .filosofia__conteudo {
+        padding: 0;
+    }
+
+    .filosofia__banner {
+        height: calc(100vh - 30rem);
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    .filosofia {
+        flex-direction: row;
+        padding: 5rem 0 5rem 5rem ;
+    }
+
+    .filosofia__titulo {
+        font-size: 5rem;
+    }
+
+    .filosofia__lista{
+        font-size: 2.5rem;
+    }
+
+    .filosofia__descricao{
+        font-size: 2.5rem;
+    }
+
+    .filosofia__conteudo {
+        padding: 2rem;
+    }
+
+    .filosofia__banner{
+        height: calc(100vh - 30rem);
+        width: 50%;
+    }
+}
+
+

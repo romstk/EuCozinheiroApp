@@ -1,0 +1,83 @@
+.banner {
+    box-sizing: border-box;
+    position: relative; /*Define relativo para que os filhos sejam posicionados em relação a eles, por isso colocamos relative no pai para gerar um contexto para os filhos*/
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.banner__imagem {
+    background-image: url('../../../public/imagens/banner-cabecalho.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;   
+
+}
+    
+    
+    @media screen and (min-width: 0) {
+        .banner__imagem {
+            height: calc(100vh - 30rem);
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .banner__imagem {
+            height: calc(100vh - 20rem);
+        }
+    }
+
+.banner__titulo{
+    font-family: 'Pacifico', cursive;
+    color: #fdfdfd;
+    position: absolute; /*Absoluta em relação ao pai que é o banner*/
+    left: 50%;
+    top: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    width: 100%;
+    
+}
+    
+    @media screen and (min-width: 0) {
+        .banner__titulo {
+            font-size: 4rem;
+            transform: translate(-50%, -100%);
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .banner__titulo {
+            font-size: 6rem;
+            transform: translate(-50%, -100%);
+        }
+    }
+
+    
+.banner__subtitulo{
+    font-family: 'Pacifico', cursive;
+    color: #fdfdfd;
+    position: absolute; /*Absoluta em relação ao pai que é o banner*/
+    left: 50%;
+    top: 60%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    width: 100%;
+
+}
+    
+    @media screen and (min-width: 0) {
+        .banner__subtitulo {
+            font-size: 3rem;
+            transform: translate(-50%, -20%);
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .banner__subtitulo {
+            font-size: 3rem;
+            transform: translate(-50%, 60%);
+        }
+    }
+
+
