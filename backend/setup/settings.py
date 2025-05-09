@@ -141,6 +141,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# O diretório de arquivos estáticos do projeto.
+# O Django irá coletar os arquivos estáticos de todas as apps e colocar nesse diretório.
+# Mesmo eu não usando arquivos estáticos, é bom ter esse diretório criado. pois o Djnago vai usar ele para coletar os arquivos estáticos de todas as apps.
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
