@@ -31,7 +31,7 @@ SECRET_KEY = str(os.getenv("SECRET_KEY"))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.eucozinheiro.com.br', 'eucozinheiro.com.br']
 
 
 # Application definition
@@ -65,6 +65,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8042",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "http://www.eucozinheiro.com.br",
+    "http://eucozinheiro.com.br",
 ]
 
 ROOT_URLCONF = 'setup.urls'
