@@ -31,7 +31,7 @@ SECRET_KEY = str(os.getenv("SECRET_KEY"))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.eucozinheiro.com.br', 'eucozinheiro.com.br']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.eucozinheiro.com.br', 'eucozinheiro.com.br', '192.252.202.237']
 
 
 # Application definition
