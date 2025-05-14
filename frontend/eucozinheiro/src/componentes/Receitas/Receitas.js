@@ -9,7 +9,7 @@ function Receitas() {
     useEffect(() => {
         const fetchReceitas = async () => {
             try {
-                const response = await fetch('http://localhost:8000/receitas');
+                const response = await fetch('http://localhost:8000/backend/receitas');
                 if (!response.ok) {
                     throw new Error('Erro ao buscar receitas');
                 }
