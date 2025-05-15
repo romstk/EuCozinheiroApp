@@ -141,7 +141,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/django_static/'
 
 # O diretório de arquivos estáticos do projeto.
 # O Django irá coletar os arquivos estáticos de todas as apps e colocar nesse diretório.
