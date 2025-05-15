@@ -3,7 +3,8 @@ import './Card.css';
 
 function Card({imagem, nome, descricao, autor }) {
     // baseURL é a URL base para as imagens que está sendo salva no backend quando salvamos as receitas o Django salva as imagens no diretório media pois foi definido no settings.py
-    const baseURL = 'http://www.eucozinheiro.com.br/media/';
+    const baseURL = process.env.REACT_APP_BASE_MEDIA_URL;
+
     
     return (
         <div class="receitas__card">
