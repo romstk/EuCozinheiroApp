@@ -1,15 +1,17 @@
 import './Receitas.css';
-
 import React, {useEffect, useState} from 'react';
 import Card from '../Card/Card';
 
 
 function Receitas() {
     const [receitas, setReceitas] = useState([]);
+    // Variável para o endereço da API, definida no arquivo .env
+    const API_BASE_URL = process.env.REACT_APP_API_URL;
+
     useEffect(() => {
         const fetchReceitas = async () => {
             try {
-                const response = await fetch('/backend/receitas/');
+                const response = await fetch(`${API_BASE_URL}/receitas/`);
                 if (!response.ok) {
                     throw new Error('Erro ao buscar receitas');
                 }
@@ -51,7 +53,7 @@ function Receitas() {
                   </form>
                 </div>
               </nav>
-                <div class="receitas__container" id="receitas__container">
+                <div className="receitas__container" id="receitas__container">
                 
                 {/*Neste ponto vamos montar a lista de cards dinamicamente
                     Vamos carregar os dados das receitas vindo do backend armazenados na variável chamda Cards contendo os dados das receitas para montar os cards dinamicamente 
@@ -71,7 +73,7 @@ function Receitas() {
                  * O componente Card vai renderizar as informações da receita de forma estilizada.
                  */}
                 {receitas.map((receita) => (
-                    console.log(receita),
+                    
                     <Card
                         key={receita.id}
                         imagem={receita.imagem}
