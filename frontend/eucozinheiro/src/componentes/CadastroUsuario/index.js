@@ -1,9 +1,9 @@
 import './CadastroUsuario.css';
-import CampoTexto from '../CampoTexto/CampoTexto';
-import Botao from '../Botao/Botao';
-import SelectUF from '../SelectUF/SelectUF';    
-import SelectCidade from '../SelectCidade/SelectCidade'; // Importa o componente SelectCidade
-import { use, useEffect, useState } from 'react';
+import CampoTexto from '../CampoTexto';
+import Botao from '../Botao';
+import SelectUF from '../SelectUF';    
+import SelectCidade from '../SelectCidade'; // Importa o componente SelectCidade
+import { useEffect, useState } from 'react';
 
 
 function CadastroUsuario() {

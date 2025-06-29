@@ -1,6 +1,6 @@
 import './Receitas.css';
 import React, {useEffect, useState} from 'react';
-import Card from '../Card/Card';
+import Card from '../Card';
 
 
 function Receitas() {
